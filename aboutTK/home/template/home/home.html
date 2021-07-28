@@ -1,0 +1,24 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}Official Home Page{% endblock title %}
+
+
+{% block content%}
+  <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <a href='https://www.freepik.com/vectors/people'>
+        <img src="{% static 'image/examples.jpg' %}" alt="freepik.com">
+      </a>
+      <h1 class="display-4 fw-normal">Know me more.</h1>
+      <p class="fs-5 text-muted">Currently, I'm ETL Engineer who designed data pipeline and developed transformation scripts to deliver better data structure for customer. 
+      I'm using Shell, Python and SQL as my main coding language. 
+    But this one developed with Django ! </p>
+    </div>    
+{% endblock content %}
+
+
+{%block link %}
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/theeraphan">Github</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.linkedin.com/in/theeraphan-krittayanurak/">Linkedin</a></li>
+{%endblock link %}
+

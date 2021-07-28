@@ -1,0 +1,52 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}Contact Us{% endblock title %}
+
+
+{% block content%}
+
+{%if status%}
+  {% if status == 'success' %}
+    <div class="alert alert-success" role="alert">
+    <h3 class="alert-heading"><strong>Submitted!</strong></h3>
+    <p>I got you email, I will keep in touch soon. Thank you!</p>
+    </div>
+  {% else %}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <h3 class="alert-heading"><strong>lack of information</strong>, please fill in more information. </h3>
+    </div>
+  {% endif %}
+{% endif %}
+  <div class="container">
+
+    <form method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="title">Consult Topic</label>
+      <input class="form-control" type="text" name="title" id="title">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="email">Email address </label>
+      <input class="form-control" type="text" name="email" id="email">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="detail">Information Detail Here </label>
+      <textarea class="form-control" rows="5" id="detail" name="detail"></textarea>
+    </div>
+    <br>
+    <button type"submit" class="btn btn-primary">Submit</button>
+    </form>  
+
+  </div>
+
+{% endblock content %}
+
+
+{%block link %}
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/theeraphan">Github</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.linkedin.com/in/theeraphan-krittayanurak/">Linkedin</a></li>
+{%endblock link %}
+

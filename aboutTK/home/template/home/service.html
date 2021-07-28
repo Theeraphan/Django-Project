@@ -1,0 +1,64 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}Services{% endblock title %}
+
+
+{% block content%}
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Free</h4>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h3>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>ETL Consult 10 Min</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Monthly Member</h4>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title pricing-card-title">$9<small class="text-muted fw-light">/mo</small></h3>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>ETL Consult 1 hours</li>
+              <li>Email support</li>
+              <li>Remote services access 2 times</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-white bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Enterprise</h4>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h3>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>ETL Consult 3 hours</li>
+              <li>Priority email support/call 24 hrs</li>
+              <li>Remote services access 10 times</li>            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock content %}
+
+
+{%block link %}
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/theeraphan">Github</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.linkedin.com/in/theeraphan-krittayanurak/">Linkedin</a></li>
+{%endblock link %}
+
